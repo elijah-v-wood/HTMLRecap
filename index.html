@@ -14,7 +14,7 @@
         <button>
             <a href="#Locations" style="color:goldenrod">Locations</a>
         <button>
-            <a href="#Hours" style="color: darkgray;">Hours</a>
+            <a href="#Hours" style="color: goldenrod;">Hours</a>
     </nav>
 <hr style="color:gold;"/>
 </section>
@@ -26,13 +26,95 @@
     </iframe>
     <h2 style="background-color: maroon;color:gold; font-style: 
     oblique;border: dotted 5px gold;">
-        Try our new bigger Burger!
+        Try our new Bigger Better Burger!
     </h2>
 </section>
 <div style="float: left;background-color:whitesmoke;
              width: 40%;text-align: center;
              border: solid 5px black;">
     <h2>!ORDER HERE!</h2>
+    <form>
+        <fieldset>
+            <table border="2">
+                <th style="text-align: center;font-size: x-large;">Entrees</th>
+                <th style="text-align: center;font-size: x-large;">Size</th>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Burger" id="Burger" value="Burger"/> 
+                        <label for="Burger">Burger</label>
+                    </td>
+                    <td>
+                        <div class="op1">
+                            <input type="radio" name="op1" id="op1s1" value="op1s1"/>
+                            <label for="op1s1">Small</label>
+                            <input type="radio" name="op1" id="op1s2" value="op1s2"/>
+                            <label for="op1s2">Medium</label>
+                            <input type="radio" name="op1" id="op1s3" value="op1s3"/>
+                            <label for="op1s3">Large</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Cheeseburger" id="Cheeseburger" value="Cheeseburger"/> 
+                        <label for="Cheeseburger">Cheeseburger</label>
+                    </td>
+                    <td>
+                        <div class="op2">
+                            <input type="radio" name="op2" id="op2s1" value="op2s1"/>
+                            <label for="op2s1">Small</label>
+                            <input type="radio" name="op2" id="op2s2" value="op2s2"/>
+                            <label for="op2s2">Medium</label>
+                            <input type="radio" name="op2" id="op2s3" value="op2s3"/>
+                            <label for="op2s3">Large</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Bigger Better Burger" id="Bigger Better Burger" value="Bigger Better Burger"/> 
+                        <label for="Bigger Better Burger">Bigger Better Burger</label>
+                    </td>
+                    <td>
+                        <div class="op3">
+                            <input type="radio" name="op3" id="op3s1" value="op3s1"/>
+                            <label for="op3s1">Small</label>
+                            <input type="radio" name="op2" id="op3s2" value="op3s2"/>
+                            <label for="op3s2">Medium</label>
+                            <input type="radio" name="op2" id="op3s3" value="op3s3"/>
+                            <label for="op3s3">Large</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="text-align: left;">
+            <legend>Your Delivery Information</legend>
+                <p>
+                    <label>Customer Name:<input name="name"/></label>
+                </p>
+                <p>
+                    <label> Your Email:<input type="email" name="email/"></label>
+                </p>
+                <p>
+                    <label>Telephone:<input type="tel" name="type"/></label>
+                </p>
+                <hr/>
+                <p>
+                    <label for="time">Preferred Delivery Time:</label>
+                    <input id="time" name="time" type="time">
+                </p>
+                <p>
+                    <label for="instructions">Delivery Instructions:</label>
+                </p>
+                <p>
+                    <textarea id="instructions" name="instructions"></textarea>
+                </p>
+        </fieldset>
+        <p>
+            <button type="submit">Submit Order</button>
+        </p>
+    </form>
 </div>
 </body>
 </html>
